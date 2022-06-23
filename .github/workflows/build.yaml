@@ -18,9 +18,9 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
-    - name: Build Solution
+    - name: Build Project
       run: |
-        MSBuild.exe SagaScript.csproj  -property:Configuration=Debug
-        ls -al
+        MSBuild.exe SagaScript.csproj  -property:Configuration=Release
+        dir
   
   
