@@ -23,5 +23,4 @@ jobs:
         password: ${{ secrets.BOKIE_SERVER_PASSWORD }}
         port: ${{ secrets.BOKIE_SERVER_PORT }}
         script: |
-          cd C:\Users\Bokie\SagaServ\Scripts\SagaScript
-          git pull
+          script.bat
