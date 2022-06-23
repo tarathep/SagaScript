@@ -23,4 +23,6 @@ jobs:
         password: ${{ secrets.BOKIE_SERVER_PASSWORD }}
         port: ${{ secrets.BOKIE_SERVER_PORT }}
         script: |
-          script.bat
+          git pull
+          dir
+          
