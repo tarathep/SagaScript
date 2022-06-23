@@ -21,18 +21,15 @@ jobs:
     - name: Build Project
       run: |
         MSBuild.exe SagaScript.csproj  -property:Configuration=Release
-        dir
-        cd bin
-        dir
     
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
         name: SagaScript
-        path: '${{ github.workspace }}/bin/SagaScript.dll'
+        path: '${{ github.workspace }}/bin/Release/SagaScript.dll'
 
-    - name: Upload Artifact Release
-      uses: softprops/action-gh-release@v1
-      with:
-        files: ${{ github.workspace }}/bin/SagaScript.dll
+    # - name: Upload Artifact Release
+    #   uses: softprops/action-gh-release@v1
+    #   with:
+    #     files: ${{ github.workspace }}/bin/Release/SagaScript.dll
   
