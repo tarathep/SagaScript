@@ -1,0 +1,27 @@
+name: Debug Script
+
+on:
+  push:
+    branches:
+      - develop
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Artifact
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Deploy
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.BOKIE_SERVER_HOST }}
+        username: ${{ secrets.BOKIE_SERVER_USERNAME }}
+        password: ${{ secrets.BOKIE_SERVER_PASSWORD }}
+        port: ${{ secrets.BOKIE_SERVER_PORT }}
+        script: |
+          cd C:\Users\Bokie\SagaServ\Scripts\SagaScript
+          git pull
