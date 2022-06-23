@@ -49,7 +49,7 @@ namespace SagaScript
                 fee = "Free";
             }
 
-            switch (Select(pc, "What do you want to do?", "", "Buy something", "Sell something", "Deposit in bank", "Withdraw money in bank", "Use warehouse (" + fee + ") ", "[Treasure Gold] Handling", "Do nothing"))
+            switch (Select(pc, "What do you want to do ???", "", "Buy something", "Sell something", "Deposit in bank", "Withdraw money in bank", "Use warehouse (" + fee + ") ", "[Treasure Gold] Handling", "Do nothing"))
             {
                 case 1:
                     OpenShopBuy(pc, shopID);
