@@ -22,7 +22,8 @@ jobs:
       run: |
         MSBuild.exe SagaScript.csproj  -property:Configuration=Release
         dir
-        # - name: Upload Reports
+        cd bin
+        dir
     
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
