@@ -36,9 +36,9 @@ namespace SagaScript.M30091001
                 !Neko_03_cmask.Test(Neko_03.與初心者學校老師對話))
             {
                 Neko_03_cmask.SetValue(Neko_03.與初心者學校老師對話, true);
-                Say(pc, 0, 131, "我問了老師有關一個小男孩的事情喔$R;");
-                Say(pc, 11000978, 131, "啊啊！$R;" +
-                    "$R是在說那孩子嗎?$R;" +
+                Say(pc, 0, 131, "I asked the teacher about a little boy$R;");
+                Say(pc, 11000978, 131, "Ahh! $R;" +
+                    "$RAre you talking about the kid?$R;" +
                     "$P啊，好像是昨天早上…$R有個小男孩問我去東域的路$R;" +
                     "$R我因為咕咕有危險$R所以勸過他不要去，但是…$R一轉眼，他就從學校跑出去了$R;" +
                     "$P…他也很可憐啊，媽媽因病去世了…$R;" +
@@ -73,7 +73,7 @@ namespace SagaScript.M30091001
             }
 
 
-            selection = Select(pc, "想問什麼問題?", "", "剛開始的時候，該做什麼好呢?", "去上城的方法", "加入軍隊，有什麼好處?", "哪個職業比較好?", "怎樣才能賺大錢…", "怎麼打開『木箱』呢", "跳到問題頁", "很難啊…到…", "沒有關係");
+            selection = Select(pc, "Want to ask what question?", "", "When starting out, what should I do?", "way to go uptown", "What are the benefits of joining the military?", "Which career is better?", "How to make big money…", "How to open the [wooden box]", "skip to question page", "It's hard...to...", "it doesn't matter");
 
             while (selection != 9)
             {
@@ -167,7 +167,7 @@ namespace SagaScript.M30091001
                         return;
                 }
 
-                selection = Select(pc, "想問什麼問題?", "", "剛開始的時候，該做什麼好呢?", "去上城的方法", "加入軍隊，有什麼好處?", "哪個職業比較好?", "怎樣才能賺大錢…", "怎麼打開『木箱』呢", "跳到問題頁", "很難啊…到…", "沒有關係");
+                selection = Select(pc, "Want to ask what question?", "", "When starting out, what should I do?", "way to go uptown", "What are the benefits of joining the military?", "Which career is better?", "How to make big money…", "How to open the [wooden box]", "skip to question page", "It's hard...to...", "it doesn't matter");
             }
         }
 
@@ -190,7 +190,7 @@ namespace SagaScript.M30091001
         {
             int selection;
 
-            selection = Select(pc, "想問什麼問題?", "", "想交朋友…", "怎麼組成隊伍??", "騎士團練習是什麼?", "我想養寵物!", "我想擁有活動木偶", "回到首頁", "對困難的地方…", "沒有關係");
+            selection = Select(pc, "Want to ask what question?", "", "想交朋友…", "怎麼組成隊伍??", "騎士團練習是什麼?", "我想養寵物!", "我想擁有活動木偶", "回到首頁", "對困難的地方…", "it doesn't matter");
 
             while (selection != 6)
             {
@@ -289,7 +289,7 @@ namespace SagaScript.M30091001
                         return;
                 }
 
-                selection = Select(pc, "想問什麼問題?", "", "想交朋友…", "怎麼組成隊伍??", "騎士團練習是什麼?", "我想養寵物!", "我想擁有活動木偶", "回到首頁", "對困難的地方…", "沒有關係");
+                selection = Select(pc, "Want to ask what question?", "", "想交朋友…", "怎麼組成隊伍??", "騎士團練習是什麼?", "我想養寵物!", "我想擁有活動木偶", "回到首頁", "對困難的地方…", "it doesn't matter");
             }
         }
 
@@ -297,7 +297,7 @@ namespace SagaScript.M30091001
         {
             int selection;
 
-            selection = Select(pc, "想問什麼問題?", "", "無法使用技能", "因為石像和告示板無法走路…", "裝備壞掉了", "寵物進入了睡眠狀態", "行李太多無法搬運", "回到首頁", "到問題頁", "沒有關係");
+            selection = Select(pc, "Want to ask what question?", "", "無法使用技能", "因為石像和告示板無法走路…", "裝備壞掉了", "寵物進入了睡眠狀態", "行李太多無法搬運", "回到首頁", "到問題頁", "it doesn't matter");
 
             while (selection != 6)
             {
@@ -404,7 +404,7 @@ namespace SagaScript.M30091001
                         return;
                 }
 
-                selection = Select(pc, "想問什麼問題?", "", "無法使用技能", "因為石像和告示板無法走路…", "裝備壞掉了", "寵物進入了睡眠狀態", "行李太多無法搬運", "回到首頁", "到問題頁", "沒有關係");
+                selection = Select(pc, "Want to ask what question?", "", "無法使用技能", "因為石像和告示板無法走路…", "裝備壞掉了", "寵物進入了睡眠狀態", "行李太多無法搬運", "回到首頁", "到問題頁", "it doesn't matter");
             }
         }
 
