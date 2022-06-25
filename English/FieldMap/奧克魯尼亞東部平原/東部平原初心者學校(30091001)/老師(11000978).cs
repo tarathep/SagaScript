@@ -27,7 +27,7 @@ namespace SagaScript.M30091001
             int selection;
 
             //EVT11000978
-            Say(pc, 11000978, 131, "您好$R;" +
+            Say(pc, 11000978, 131, "Teacher$R;" +
                 "$R有什麼不知道的嗎?$R;");
 
             if (Neko_03_amask.Test(Neko_03.堇子任務開始) &&
