@@ -28,7 +28,7 @@ namespace SagaScript.M30091001
 
             //EVT11000978
             Say(pc, 11000978, 131, "Teacher$R;" +
-                "$R有什麼不知道的嗎?$R;");
+                "$RIs there anything you don't know?$R;", "Teacher");
 
             if (Neko_03_amask.Test(Neko_03.堇子任務開始) &&
                 !Neko_03_amask.Test(Neko_03.堇子任務完成) &&
