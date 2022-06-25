@@ -28,7 +28,7 @@ namespace SagaScript.M30091001
             }
 
             Say(pc, 11000990, 0, "哎呀，您好!$R;" +
-                                 "$R現在對「阿高普路斯市」熟悉了嗎?$R;", "初階冒險者");
+                                 "$R現在對「阿高普路斯市」熟悉了嗎?$R;", "Apprentice Adventurer");
         }
 
         void 初次與初階冒險者進行對話(ActorPC pc)
